@@ -1,4 +1,6 @@
-on: [push]
+on:
+  schedule:
+    - cron: "1 16 * * *"
 
 jobs:
   create_daily_plan_issue:
